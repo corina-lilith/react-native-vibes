@@ -1,6 +1,6 @@
 ## Welcome to "How's My Vibe"
 
-A daily mood tracker app to check in and review your daily mood.
+A daily mood tracker app to check in and review your mood over the past week.
 
 Tools:
 
