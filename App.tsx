@@ -1,20 +1,52 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import Background from './components/Background'
+import { View, Text, StyleSheet } from 'react-native'
+import { Button } from 'react-native-paper'
 
-export default function App() {
+export default function HomeScreen() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
+    <Background>
+      <View style={styles.centered}>
+        <Text style={styles.text}>How's my Vibe?</Text>
+
+        <View style={styles.buttonRow}>
+          <Button
+            icon="check"
+            mode="contained"
+            onPress={() => console.log('Pressed')}
+            style={styles.button}
+          >
+            Check In
+          </Button>
+          <Button
+            icon="calendar"
+            mode="contained"
+            onPress={() => console.log('Pressed')}
+            style={styles.button}
+          >
+            Review
+          </Button>
+        </View>
+      </View>
+    </Background>
+  )
 }
 
 const styles = StyleSheet.create({
-  container: {
+  centered: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
     justifyContent: 'center',
+    alignItems: 'center',
   },
-});
+  text: {
+    color: '#fff',
+    fontSize: 36,
+    marginBottom: 20,
+  },
+  buttonRow: {
+    flexDirection: 'row',
+    gap: 10,
+  },
+  button: {
+    marginHorizontal: 5,
+  },
+})
