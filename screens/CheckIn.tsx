@@ -1,30 +1,29 @@
 import Background from '../components/Background'
 import { View, Text, StyleSheet } from 'react-native'
+import Emotions from '../components/Emotions'
+import DaySummary from "../components/DaySummary"
 
 
 export default function HomeScreen() {
   return (
     <Background>
-      <View style={styles.centered}>
-        <Text style={styles.text}>Check In</Text>
-
+      <View>
+        <Text style={styles.text}>How am I feeling today?</Text>
         <View>
-
+          <Emotions />
         </View>
+        <DaySummary />
       </View>
     </Background>
   )
 }
 
 const styles = StyleSheet.create({
-  centered: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
   text: {
     color: '#fff',
-    fontSize: 36,
-    marginBottom: 20,
+    fontSize: 30,
+    marginTop: 60,
+    alignItems: 'center',
   }
 })
+

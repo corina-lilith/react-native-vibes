@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "feeling": "Happy"
+  },
+  {
+    "id": 2,
+    "feeling": "Joyful"
+  },
+  {
+    "id": 3,
+    "feeling": "Peaceful"
+  },
+  {
+    "id": 4,
+    "feeling": "Sad"
+  },
+  {
+    "id": 5,
+    "feeling": "Angry"
+  },
+  {
+    "id": 6,
+    "feeling": "Anxious"
+  }
+]
